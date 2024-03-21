@@ -1,0 +1,52 @@
+:root {
+  --background-color: #181824;
+  --text-color: #fff;
+
+  --scrollbar-thumb-color: #fff;
+  --scrollbar-track-color: #0d0d18;
+  --scrollbar-width: 15px;
+
+  --primary: #ef12f3;
+  --primary-dark: #aa00ad;
+  --secondary: #0089c8;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+  font-family: system-ui, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  padding-top: 5rem;
+  color: var(--text-color);
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  background-color: var(--background-color);
+  background-image: radial-gradient(
+    #b1b1b154 1px,
+    transparent 0
+  );
+  background-size: 20px 20px;
+  cursor: default;
+}
+
+input {
+  color: var(--text-color);
+}
+
+input[type="file"] {
+  max-width: 250px;
+  height: fit-content;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background-color: var(--primary-dark);
+}
